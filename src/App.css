@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: #fafafa;
+  /* height: 100vh; */
+}
+
+.app__posts {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.app__postsRight {
+  margin-left: 20px;
+}
+
+.app__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 10px 20px;
+  text-align: center;
+  object-fit: contain;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__headerImage {
+  object-fit: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetembed {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.app__bottom {
+  position: sticky;
+  bottom: 0;
+  padding: 5px 20px;
+  z-index: 1;
+  background-color: white;
+  border-top: 1px solid lightgray;
+}
+
+.app__sorry {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .app__posts {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+
+  .app__signup {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    /* align-content: center;
+    justify-content: center;
+    text-align: center; */
+    /* align-items: center; */
+  }
+
+  .tweetembed {
+    display: none;
+  }
+
+  .app__bottom {
+    position: sticky;
+    bottom: 0;
+    padding: 15px 20px;
+    z-index: 1;
+    background-color: white;
+    border-top: 1px solid lightgray;
+  }
+}
